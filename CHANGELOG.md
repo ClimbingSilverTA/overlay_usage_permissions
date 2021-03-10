@@ -1,3 +1,3 @@
-## 0.0.1
+## 2.0.0-nullsafety.0
 
-* TODO: Describe initial release.
+- Migrated package to null-safety.

@@ -117,6 +117,7 @@ public class OverlayUsagePermissionsPlugin: FlutterPlugin, MethodCallHandler, Ac
   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
     if (requestCode == REQUEST_CODE_OVERLAYS || requestCode == REQUEST_CODE_USAGE_STATS) {
       pendingResult?.success(true)
+      pendingResult = null
     }
 
     return false

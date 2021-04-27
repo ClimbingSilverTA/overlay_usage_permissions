@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:overlay_usage_permissions/overlay_usage_permissions.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('overlay_usage_permissions');
+  const channel = MethodChannel('overlay_usage_permissions');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -17,7 +17,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  group("Tests", () {
+  group('Tests', () {
     // Can't mock platform(to Android), won't even make it past the first conditional
     test('usageStatsGranted', () async {
       expect(await OverlayUsagePermissions.usageStatsGranted, false);
@@ -28,5 +28,4 @@ void main() {
       expect(await OverlayUsagePermissions.drawGranted, false);
     });
   });
-
 }

@@ -1,12 +1,12 @@
 name: overlay_usage_permissions
 description: A Flutter plugin for checking and requesting Overlay/Usage Stats permissions on Android.
-version: 1.0.0
+version: 2.0.0-nullsafety.1
 author:
 homepage: https://github.com/ClimbingSilverTA/overlay_usage_permissions
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.10.0"
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.22.0"
 
 dependencies:
   flutter:
@@ -15,6 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic: ^1.11.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

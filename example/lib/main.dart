@@ -62,14 +62,14 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Text('Usage Stats Granted: $_usageStatsGranted'),
               Text('Draw Overlays Granted: $_drawOverlaysGranted'),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Grant Usage Stats'),
                 onPressed: () async {
                   await OverlayUsagePermissions.requestUsageStats();
                   await initPermissions();
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Grant Draw Overlays'),
                 onPressed: () async {
                   await OverlayUsagePermissions.requestDraw();
